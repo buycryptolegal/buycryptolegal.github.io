@@ -52,7 +52,7 @@ $(document).ready(function() {//why
 	
 	setInterval(function(){
 		priceFromServer();
-	},40000);
+	},10000);
 
 //меняем картинку  поля получить в соответствии с выбранной валютой 
 function hideMoney_2(param){
