@@ -1,5 +1,5 @@
 $(document).ready(function() {//why
-
+alert(1);
 	let priceFromServer =function(){
 		$.ajax({
 			method:'post',
@@ -48,6 +48,7 @@ $(document).ready(function() {//why
 	}
 
 	priceFromServer();
+	alert(2);
 	setInterval(function(){
 		priceFromServer();
 	},40000);
