@@ -1,5 +1,5 @@
 $(document).ready(function() {//why
-alert(1);
+
 	let priceFromServer =function(){
 		$.ajax({
 			method:'post',
@@ -12,7 +12,7 @@ alert(1);
 				console.log(result);
 			},
 			error:function(XHR, error){
-				console.log(XHR.status+', '+XHR.statusText);
+				console.log('error '+XHR.status+', '+XHR.statusText);
 				priceFromExc={
 					USD:{
 						BTC:0,
@@ -48,7 +48,7 @@ alert(1);
 	}
 
 	priceFromServer();
-	alert(2);
+	
 	setInterval(function(){
 		priceFromServer();
 	},40000);
