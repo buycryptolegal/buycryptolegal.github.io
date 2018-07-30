@@ -1,7 +1,7 @@
 $(document).ready(function() {//why
 
 	let priceFromServer =function(){
-		console.log('1	eqrfsefsfafasdf');
+		
 		$.ajax({
 			method:'post',
 			url:'https://bestbitcoinprice.pro/rate',
